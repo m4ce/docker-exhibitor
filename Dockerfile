@@ -9,7 +9,7 @@ RUN mvn -f /opt/exhibitor/pom.xml -s /opt/exhibitor/settings.xml package
 RUN mv /opt/exhibitor/target/exhibitor*.jar /opt/exhibitor/exhibitor.jar
 COPY defaults.conf.template /opt/exhibitor/defaults.conf.template
 
-ADD http://www.apache.org/dist/zookeeper/zookeeper-3.4.6/zookeeper-3.4.6.tar.gz /opt
+ADD http://www.apache.org/dist/zookeeper/zookeeper-3.4.6/zookeeper-3.4.6.tar.gz /opt/
 RUN mv /opt/zookeeper-* /opt/zookeeper
 
 ADD run.sh /run.sh
