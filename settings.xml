@@ -1,0 +1,16 @@
+<settings>
+  <proxies>
+   <proxy>
+      <active>false</active>
+      <protocol>http</protocol>
+      <host></host>
+      <port></port>
+    </proxy>
+   <proxy>
+      <active>false</active>
+      <protocol>https</protocol>
+      <host></host>
+      <port></port>
+    </proxy>
+  </proxies>
+</settings>
