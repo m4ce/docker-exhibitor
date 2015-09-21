@@ -12,8 +12,8 @@ Generic configuration can be driven by exporting the following enviroment variab
 
 | Environment variable  | Description |
 | ------------- | ------------- |
-| ZOOKEEPER_DATA_DIR | The local path to store ZooKeeper data (default: /var/lib/zookeeper/snapshot)|
-| ZOOKEEPER_LOG_DIR  | The local path to store indexed ZooKeeper transaction logs (default: /var/lib/zookeeper/transaction) |
+| ZOOKEEPER_DATA_DIR | The local path to store ZooKeeper data (default: /var/lib/zookeeper/snapshots)|
+| ZOOKEEPER_LOG_DIR  | The local path to store indexed ZooKeeper transaction logs (default: /var/lib/zookeeper/transactions) |
 | ZOOKEEPER_CLUSTER_SIZE | If non-zero, automatic instance management will attempt to keep the ensemble at this fixed size. (default: 0) |
 | EXHIBITOR_UI_PORT  | Port for the HTTP Server (default: 8081) |
 | EXHIBITOR_HOSTNAME  | Hostname to use for this JVM (default: `hostname`) |
@@ -32,7 +32,7 @@ This is if you wish to use AWS S3 backend:
 | AWS_SECRET_ACCESS_KEY | AWS access secret key |
 | AWS_S3_BUCKET | The bucket name and key to store the config |
 | AWS_S3_PREFIX | When using AWS S3 shared config files, the prefix to use for values such as locks |
-| AWS_S3_BACKUP | If true, enables AWS S3 backup of ZooKeeper log files |
+| AWS_S3_BACKUP | If true, enables AWS S3 backup of ZooKeeper log files (default: false) |
 | AWS_REGION | Region for S3 calls |
 
 If you wish to use ZooKeeper:
