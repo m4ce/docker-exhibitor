@@ -11,6 +11,7 @@ COPY defaults.conf.template /opt/exhibitor/defaults.conf.template
 
 ADD http://www.apache.org/dist/zookeeper/zookeeper-3.4.6/zookeeper-3.4.6.tar.gz /opt/
 RUN tar xvzf /opt/zookeeper-3.4.6.tar.gz -C /opt
+RUN rm -f /opt/zookeeper-3.4.6.tar.gz
 RUN mv /opt/zookeeper-* /opt/zookeeper
 
 ADD run.sh /run.sh
